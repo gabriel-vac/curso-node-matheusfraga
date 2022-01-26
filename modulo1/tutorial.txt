@@ -1,0 +1,11 @@
+[Prettier]
+Nas configurações do Editor (CTRL + ,), habilitar a opção "Editor: Format On Save", faz com que o prettier formate o arquivo quando ele for salvo.
+Selecionar o Prettier na opção "Editor: Default Formatter".
+Habilitar opção "Prettier: Require Config" para fazer com que o Prettier só funcione quando existir o arquivo .prettierrc
+[Yarn]
+yarn init -y //Iniciar o projeto
+yarn add express //Instala o express (equivalente ao npm install express)
+yarn start //Roda o script start (definido nos scripts do package json)
+yarn add nodemon -D //Adiciona o nodemon e o -D indica que é só na parte de desenvolvimento
+[Conceitos]
+Middlewares - Todo tipo de função que está entre o pedido da requisição e a resposta final para o front end.
