@@ -2,6 +2,8 @@
 
 import express from 'express'; //para fazer as importações dessa maneira é necessário instalar o sucrase
 import mongoose, { mongo } from 'mongoose';
+import cors from 'cors';
+import path from 'path';
 import routes from './routes';
 
 // const express = require('express');
@@ -24,6 +26,12 @@ class App {
     }
 
     middlewares() {
+        this.server.use(cors()); //se eu passar assim significa que estou liberando completamente a API para cada client que requisitar qualqer método 
+        //middleware statico para acessar as imagens
+        this.server.use(
+            '/files',
+            express.static(path.resolve(__dirname, '..', 'uploads'))
+        );
         this.server.use(express.json()); //falar que vamos usar o JSON
     }
 
