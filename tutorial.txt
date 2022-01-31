@@ -21,9 +21,15 @@ Middlewares - Todo tipo de função que está entre o pedido da requisição e a
 [git/github]
 Fork - É criar uma cópia do repositório na sua conta, pois você não consegue fazer commit no repositório original, apenas na sua conta.
 Depois clonar o repositório da nossa conta na nossa maquina.
-git diff README.md - Ve as mudanças
-git push origin HEAD - Da o push na branch que eu estou agora (o push irá para o meu repositório forkado)
+git diff README.md // Ve as mudanças
+git push origin HEAD // Da o push na branch que eu estou agora (o push irá para o meu repositório forkado)
 agora crio um pull request com a alteração pela interface do github, ai posso selecioanr de onde (minha master provavelmente) para onde (master do repositório original provavelmente)
+git checkout -b funcionalidade_x // cria um branch chamado "funcionalidade_x" e faz o checkout.
+git branch -d funcionalidade_x // deleta um branch
+git push origin funcionalidade_x // envia o branch para o repositório remoto
+git diff <branch origem> <branch destino>
+git reflog //Lista de commits
+git reset HEAD@{2} //volta para este commit em específico
 [ESLINT]
 Depois de dar o eslint --init e instalar por NPM, deletar o arquivo package-lock.json e executar yarn para baixar as depêndencias do eslint pelo yarn
 CTRL + SHIFT + P e ir em "Open Settings (JSON)" e adicionar eslint.autoFixOnSave: true e eslint.validate com as configurações (Aula 27)
