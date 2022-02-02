@@ -16,6 +16,12 @@ yarn add yup //biblioteca para fazer validações
 yarn add eslint -D //instalar eslint para validar se o seu código segue o padrão definido. -D para instalar apenas no ambiente de desenvolvimento.
 yarn eslint --init //Iniciar eslint
 yarn //baixa as depêndencias do projeto equivalente npm install
+yarn add sequelize //Instala ORM Sequelize
+yarn add sequelize-cli -D //Instala interpretador de linha de comando no ambiente de desenvolvimento
+yarn sequelize migration:create --name=create-users
+yarn sequelize db:migrate //executar a ultima migration criada
+yarn sequelize db:migrate:undo //desfaz a ultima migration]
+yarn sequelize db:migrate:undo:all //desfaz todas as migrations
 [Conceitos]
 Middlewares - Todo tipo de função que está entre o pedido da requisição e a resposta final para o front end.
 [git/github]
