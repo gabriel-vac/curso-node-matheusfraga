@@ -50,7 +50,7 @@ class UserController {
 
     const { email, oldPassword } = req.body;
 
-    const user = await User.findByPk(req.params.id);
+    const user = await User.findByPk(req.userId);
 
     if (!user) {
       return res.status(401).json({ error: 'Usuário não econtrado' });

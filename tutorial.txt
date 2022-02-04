@@ -38,7 +38,7 @@ git push origin funcionalidade_x // envia o branch para o repositório remoto
 git diff <branch origem> <branch destino>
 git reflog //Lista de commits
 git reset HEAD@{2} //volta para este commit em específico
-git remove -v //Verificar repositório remoto
+git remote -v //Verificar repositório remoto
 git checkout -- .eslintrc.js //Desfazer as alterações não commitadas do arquivo .eslintrc.js
 [ESLINT]
 Depois de dar o eslint --init e instalar por NPM, deletar o arquivo package-lock.json e executar yarn para baixar as depêndencias do eslint pelo yarn
