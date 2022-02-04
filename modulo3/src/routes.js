@@ -1,15 +1,14 @@
 import { Router } from 'express';
-import User from './app/models/User';
+import userController from './app/controllers/UserController';
+import SessionController from './app/controllers/SessionController';
+import authMiddleware from './app/middlewares/auth';
 
 const routes = new Router();
 
-routes.get('/teste', async (req, res) => {
-  const user = await User.create({
-    name: 'Matheus',
-    email: 'matheus@gmail.com',
-    password_hash: '123123',
-  });
-  res.json(user);
-});
+routes.post('/users', userController.store);
+routes.post('/sessions', SessionController.store);
+
+routes.use(authMiddleware); // Todas as rotas que estiverem abaixo desse middleware irão precisar se autenticar (não preciso necessariamente passar o midleware como parâmetro no put abaixo)
+routes.put('/users/:id', userController.update);
 
 export default routes;

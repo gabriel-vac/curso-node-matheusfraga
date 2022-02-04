@@ -22,6 +22,8 @@ yarn sequelize migration:create --name=create-users
 yarn sequelize db:migrate //executar a ultima migration criada
 yarn sequelize db:migrate:undo //desfaz a ultima migration]
 yarn sequelize db:migrate:undo:all //desfaz todas as migrations
+yarn add bcrypt js
+yarn add jsonwebtoken
 [Conceitos]
 Middlewares - Todo tipo de função que está entre o pedido da requisição e a resposta final para o front end.
 [git/github]
