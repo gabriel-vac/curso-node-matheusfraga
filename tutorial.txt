@@ -16,6 +16,7 @@ yarn add yup //biblioteca para fazer validações
 yarn add eslint -D //instalar eslint para validar se o seu código segue o padrão definido. -D para instalar apenas no ambiente de desenvolvimento.
 yarn eslint --init //Iniciar eslint
 yarn add prettier eslint-config-prettier eslint-plugin-prettier //Adicionar prettier, plugin prettier para eslint e config do prettier pro eslint
+yarn eslint --fix src --ext .js //Executar o eslint para consertar todas as extensões .js na pasta src
 yarn //baixa as depêndencias do projeto equivalente npm install
 yarn add sequelize //Instala ORM Sequelize
 yarn add sequelize-cli -D //Instala interpretador de linha de comando no ambiente de desenvolvimento
